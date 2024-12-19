@@ -7,7 +7,7 @@ const Header = () => {
 
   const navLinks = [
     {
-      path: "/home",
+      path: "/",
       display: "Home",
     },
     {
