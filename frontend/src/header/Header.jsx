@@ -44,7 +44,7 @@ const Header = () => {
         <div className="grid grid-rows">  
           <div className="flex justify-between items-center ">
             <div className="">
-              <figure className="w-[118px] h-[80px] mt-1">
+              <figure className="sm:w-[100px] xs:w-[70px] h-[50px] mt-1">
                 <img className="w-full h-full" src="https://assarainfoods.com/themes/front/images/assarinfood.png" />
               </figure>
             </div>
@@ -66,7 +66,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="mt-5">
+          <div className="mt-5 navigation">
             <div className="flex justify-between">
               {/* referenec */}
               <div className="navigation" ref={menuRef} >
