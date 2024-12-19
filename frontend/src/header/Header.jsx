@@ -35,12 +35,13 @@ const Header = () => {
       display: "Contact Us",
     },
   ];
-  // const menuRef=useRef(null)
-  // const toggle_menu=menuRef.current.classList.toggle("show__menu")
+  const menuRef=useRef(null)
+  const toggle_menu=()=>menuRef.current.classList.toggle("show__menu")
   return (
     <>
-      <header className="px-5">
-        <div className="grid grid-rows">
+    {/* Header Section*/}
+      <header className="px-5">  
+        <div className="grid grid-rows">  
           <div className="flex justify-between items-center ">
             <div className="">
               <figure className="w-[118px] h-[80px] mt-1">
@@ -48,9 +49,10 @@ const Header = () => {
               </figure>
             </div>
             <div className="">
-              <div className="lg:hidden flex " >
+              <div className="lg:hidden flex" >
+                {/* for toggle or side bar */}
                 <CiSearch className="w-6 h-6" />
-                <BiMenu className="w-6 h-6 cursor-pointer"></BiMenu>
+                <BiMenu className="w-6 h-6 cursor-pointer" onClick={toggle_menu}></BiMenu>
               </div>
               <div className="navigation flex justify-between items-center gap-10 unclicked ">
                 <div>For Retailers</div>
@@ -64,23 +66,24 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="mt-5 navigation">
+          <div className="mt-5">
             <div className="flex justify-between">
-              <div className="">
-                <ul className="flex justify-between gap-10 " >
+              {/* referenec */}
+              <div className="navigation" ref={menuRef} >
+                <ul className="flex justify-between items-center gap-10 menu" onClick={toggle_menu}>
                   {
+                    // map function to handle easily 
                     navLinks.map((items, index) => <li key={index}>
                       <NavLink className={({ isActive }) =>
                         isActive ? "clicked font-semibold pb-[5px]" : "unclicked"
                       } to={items.path}>{items.display} </NavLink>
                     </li>)
                   }
-
                 </ul>
               </div>
               <div >
+                {/* search bar without toggle */}
                 <button ><CiSearch className="w-[24px] h-[24px]" /></button>
-
               </div>
             </div>
           </div>

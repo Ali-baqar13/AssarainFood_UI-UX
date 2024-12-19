@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="px-3">
         <div className="grid grid-cols-2 h-full">
           <div className="col-span-1 ">
-            <div classNave="flex flex-col">
+            <div className="flex flex-col">
               <div className="flex items-center  gap-5">
                 {/* <img className="w-[50px] h-[50px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NY-2JdNjCTS0NPHFYlRKAepY6iI-0ehiYg&s"/> */}
                 <FaPhoneAlt />

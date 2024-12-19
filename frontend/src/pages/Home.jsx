@@ -7,11 +7,14 @@ import Contact from './Contact'
 const Home = () => {
   return (
     <>
+    {/* must go on home first to check the site */}
     <section>
+      {/* Home section */}
       <div className="homeImage">
+        {/* Works wor medium and so on screens */}
       <div className="sm:hidden md:flex items-center px-20 w-full h-full">
         <div className="bg-white h-[300px] w-[400px]">
-          <div className="mx-5 flex flex-col items-center justify-center ">
+          <div className="p-10 flex flex-col items-center justify-center ">
             <h3 className="font-semibold text-center color2 text-2xl">Assarain Food LLTC</h3>
             <h2 className="font-semibold text-center mt-5 text-3xl">Oman best Food Distributor Fresh, Good, Natural and Speciality</h2>
           </div>
@@ -22,6 +25,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* For small Screen just work above 660px something */}
       <div className="shadeBlue sm:flex md:hidden items-center  w-full h-[500px]">
         <div className="px-10 w-1/2 flex flex-col items-center justify-center ">
           <h3 className="font-semibold text-white text-center  text-2xl">Assarain Food LLTC</h3>
@@ -32,15 +36,19 @@ const Home = () => {
     </div>
     </section>
     <section>
+      {/* second section */}
       <Brand/>
     </section>
     <section>
+      {/* third section */}
        <About/>
     </section>
     <section>
+      {/* fourth section */}
       <Whatwedo/>
     </section>
     <section>
+      {/* Fifth section */}
       <Contact/>
     </section>
     </>
