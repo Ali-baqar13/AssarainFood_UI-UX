@@ -5,9 +5,9 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaRegCopyright } from "react-icons/fa6";
 
-const foot = () => {
+const Footer = () => {
   return (
-      <footer className=" h-auto text-white bgColor3 p-5">
+      <footer className="h-auto text-white bgColor3 p-5">
         <div className="grid grid-cols-1 md:grid-cols-2 h-3/4 gap-10">
             <div className="col-span-1 flex flex-col justify-between">
                 <div className="">
@@ -37,4 +37,4 @@ const foot = () => {
   )
 }
 
-export default foot
+export default Footer

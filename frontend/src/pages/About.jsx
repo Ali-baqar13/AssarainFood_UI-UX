@@ -35,13 +35,13 @@ const About = () => {
     <div className="text-center w-4/5 p-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aperiam, nisi, facere quod consectetur nam accusantium minus saepe, recusa.</div>
 
     </div>
-    <div className="mx-24">
+    <div className="px-0">
       <ul className="grid grid-cols-1 md:grid-cols-3">
-        {card.map((items, index)=><li className="flex flex-col items-center justify-center p-10  border border-blue-200" key={index}><div className="flex flex-col">
+        {card.map((items, index)=><li className="flex flex-col items-center justify-center px-20 py-10  border border-blue-200" key={index}><div className="flex flex-col">
           
           <h2 className="color2 text-3xl font-medium">{items.number}</h2>
           <h3 className="color3 text-xl font-medium">{items.name}</h3>
-          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsam a, placeat dolorem altae? Pariatur quod corrupti est itaque!</h5>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing!</h5>
 
           </div></li>)}
       </ul>

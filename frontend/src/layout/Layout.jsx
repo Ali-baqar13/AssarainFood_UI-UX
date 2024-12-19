@@ -1,7 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom';
 import Header from '../header/Header.jsx';
-import Footer from "../foot/foot.jsx"
+import Footer from '../Footer/Footer.jsx';
+
 
 
 
@@ -11,13 +12,15 @@ const Layout = () => {
   return (
 
     <>
+    <div class="flex flex-col h-screen justify-between">
      <Header />
       <main >
       <Outlet />
       </main>
-      <div className="">
       <Footer/>
       </div>
+      
+      
       
    
     </>

@@ -22,12 +22,12 @@ const Whatwedo = () => {
   return (
     <div className="w-full h-auto">
 
-    <div className="flex flex-col w-full justify-center items-center ">
+    <div className="flex flex-col  justify-center items-center ">
     <div className="clicked font-bold text-3xl pb-2">Featured Assarain News</div>
     <div className="text-center w-4/5 pt-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aperiam, nisi, facere quod consectetur nam accusantium minus saepe, recusandae quae reiciendis impedit. Temporibus dolor nesciunt necessitatibus. Ducimus recusandae maiores sunt.</div>
 
     </div>
-    <div className="mx-24">
+    <div className="px-10">
       <ul className="grid grid-cols-1 md:grid-cols-3">
         {card.map((items, index)=><li className="flex flex-col items-center justify-center p-5" key={index}><div className="flex flex-col">
           

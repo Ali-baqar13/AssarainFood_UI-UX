@@ -10,6 +10,9 @@ export default {
         'extra-loose': '2.5',
         '12': '3rem',
       },
+      screens:{
+        xs:"300px"
+      }
     },
   },
   plugins: [],

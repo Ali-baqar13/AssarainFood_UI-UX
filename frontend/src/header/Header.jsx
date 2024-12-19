@@ -83,7 +83,7 @@ const Header = () => {
               </div>
               <div >
                 {/* search bar without toggle */}
-                <button ><CiSearch className="w-[24px] h-[24px]" /></button>
+                <button ><CiSearch className="w-[24px] h-[24px] navigation" /></button>
               </div>
             </div>
           </div>
